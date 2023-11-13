@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Mon Nov 13 14:46:36 2023
+[*]
+[dumpfile] "/home/dsatizabal/cpuy-stack/stack.vcd"
+[dumpfile_mtime] "Mon Nov 13 14:46:00 2023"
+[dumpfile_size] 2958
+[savefile] "/home/dsatizabal/cpuy-stack/stack.gtkw"
+[timestart] 0
+[size] 1920 1033
+[pos] -1 -1
+*-15.557211 31210 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb.
+[sst_width] 276
+[signals_width] 166
+[sst_expanded] 1
+[sst_vpaned_height] 309
+@28
+tb.clk_tb
+tb.rst_tb
+tb.enable_tb
+tb.operation_tb
+@22
+tb.data_in_tb[15:0]
+tb.data_out_tb[15:0]
+@28
+tb.empty_tb
+@29
+tb.full_tb
+[pattern_trace] 1
+[pattern_trace] 0
