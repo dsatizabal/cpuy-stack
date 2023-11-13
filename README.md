@@ -47,7 +47,7 @@ make test_stack
 
 you should see a result like this:
 
-![Stack module tests results](./img/tests.png "Stack results: timer module")
+![Stack module tests results](./img/tests.png "Stack results: stack module")
 
 Observe in the Makefile that a dump_stack.v file is included and used to run the test command, in that file, the output file and the variables to be dumped (the name of the top module) are defined, after running the test the corresponding .vcd (value change dump) file is created and you can proceed to view it with the GtkWave command:
 
@@ -55,13 +55,11 @@ Observe in the Makefile that a dump_stack.v file is included and used to run the
 make gtkwave_stack
 ```
 
-a GtkWave window will open, you should see the hierarchy of the timer containing the available signals that can be displayed for examination, like in our case we're viewing the clk, rst, enable, operation, data_in, data_out, empty and full:
+a GtkWave window will open, you should see the hierarchy of the stack containing the available signals that can be displayed for examination, like in our case we're viewing the clk, rst, enable, operation, data_in, data_out, empty and full:
 
 ![GtkWave results for stack module](./img/gtkwave.png "GtkWave: stack module")
 
-observe that for this case we're not using a verilog testbench but rather we're testing directly (Design Under Test or DUT for CocoTB) the corresponding modules.
-
-As per 11Nov2023 the timer is having a malfunction that activates the empty/full signals a clock cycle delay.
+the tests use a TestBench defined in the tb.v file, this file instantiates the stack and wires the corresponding signals.
 
 ## Running Formal Verification:
 
