@@ -7,8 +7,8 @@ async def normal_push_operation(dut):
     clock = Clock(dut.clk_tb, 10, "us")
     cocotb.fork(clock.start())
 
-    # dut.VGND_tb.value = 0
-    # dut.VPWR_tb.value = 1
+    dut.VGND_tb.value = 0
+    dut.VPWR_tb.value = 1
 
     dut.enable_tb.value = 1
     dut.operation_tb.value = 0 # Pop
@@ -35,8 +35,8 @@ async def normal_pop_operation(dut):
     clock = Clock(dut.clk_tb, 10, "us")
     cocotb.fork(clock.start())
 
-    # dut.VGND_tb.value = 0
-    # dut.VPWR_tb.value = 1
+    dut.VGND_tb.value = 0
+    dut.VPWR_tb.value = 1
 
     dut.enable_tb.value = 1
     dut.operation_tb.value = 0 # Pop
@@ -69,8 +69,8 @@ async def stack_gets_full(dut):
     clock = Clock(dut.clk_tb, 10, "us")
     cocotb.fork(clock.start())
 
-    # dut.VGND_tb.value = 0
-    # dut.VPWR_tb.value = 1
+    dut.VGND_tb.value = 0
+    dut.VPWR_tb.value = 1
 
     dut.enable_tb.value = 1
     dut.operation_tb.value = 1 # Push
@@ -132,8 +132,8 @@ async def stack_pops_same_values(dut):
     clock = Clock(dut.clk_tb, 10, "us")
     cocotb.fork(clock.start())
 
-    # dut.VGND_tb.value = 0
-    # dut.VPWR_tb.value = 1
+    dut.VGND_tb.value = 0
+    dut.VPWR_tb.value = 1
 
     dut.enable_tb.value = 1
     dut.operation_tb.value = 1 # Push
